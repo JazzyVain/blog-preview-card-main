@@ -1,0 +1,97 @@
+body {
+    background-color: hsl(47, 88%, 63%);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;  
+    align-items: center;       
+    height: 100vh;
+    margin: 0;
+}
+
+.box_white {
+    background-color: hsl(0, 0%, 100%);
+    width: 380px;
+    height: 530px;
+    border-radius: 20px;
+    box-shadow: 0.4em 0.4em black;
+    z-index: 1;
+    border: solid 1px hsl(0, 0%, 0%); 
+    transition: transform 0.5s ease;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.box_white:hover {
+    transform: scale(1.05);
+}
+
+
+.learning {
+    font-size: 17px;
+    font-weight: bold;
+    justify-content: center;
+    color: hsl(0, 0%, 0%);
+    background-color: hsl(47, 88%, 63%);
+    width: 71px;
+    height: 24px;
+    padding: 7px 19px;
+    margin: 20px 0 10px 0;
+    border-radius: 6px; 
+    position: relative;
+    top: 25px;
+    left: 20px;
+}
+
+#p {
+    position: relative;
+    margin: 0 0 15px;
+    line-height: 1.5;
+    z-index: 2;
+    padding: 0px 19px;
+    top: 20px;
+}
+
+.data {
+    position: relative;
+    margin: 0px 0px 0px;
+    line-height: 1.5;
+    z-index: 2;
+    padding: 7px 19px;
+    top: 20px;
+}
+
+.title {
+    position: relative;
+    margin: 0 0 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    z-index: 2;
+    font-size: 24px;
+}
+
+.description {
+    position: relative;
+    margin: 0 0 16px;
+    line-height: 1.5;
+    z-index: 2;
+    color : hsl(0, 0%, 42%);
+}
+
+.author {
+    position: relative;
+    margin: 0 0 16px;
+    line-height: 1.5;
+    font-weight: bold;
+    z-index: 2;
+    top: 30px;
+    left: 65px;
+}
+
