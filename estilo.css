@@ -22,9 +22,11 @@ body {
 
 @keyframes fadeIn {
     from {
+        scale: 0;
         opacity: 0;
     }
     to {
+        scale: 1.05;
         opacity: 1;
     }
 }
@@ -32,7 +34,6 @@ body {
 .box_white:hover {
     transform: scale(1.05);
 }
-
 
 .learning {
     font-size: 17px;
